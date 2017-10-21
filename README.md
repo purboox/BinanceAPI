@@ -134,10 +134,13 @@ binance.cancel("ETHBTC", orderId)
 	'symbol': 'ETHBTC', 
 	'origClientOrderId': '6SHkb2Oo1d6WHOEvWynhsl'
 }
-// {
-//	'msg': 'UNKNOWN_ORDER', 
-//	'code': -2011
-// }
+```
+
+```js
+{
+	'msg': 'UNKNOWN_ORDER', 
+	'code': -2011
+}
 ```
 </details>
 
