@@ -40,21 +40,21 @@ binance.get_orderbooks("ETHBTC", 5)
 
 ```js
 {
-	'lastUpdateId': 18044415, 
-	'bids': [
-		['0.04895000', '3.81000000', []], 
-		['0.04894900', '24.39600000', []], 
-		['0.04894800', '3.97400000', []], 
-		['0.04894300', '10.75200000', []], 
-		['0.04892900', '0.84400000', []]
-	], 
-	'asks': [
-		['0.04910000', '3.73800000', []], 
-		['0.04914400', '15.00000000', []], 
-		['0.04914700', '28.22000000', []], 
-		['0.04927600', '12.15100000', []], 
-		['0.04935000', '70.00000000', []]
-	]
+    'lastUpdateId': 18044415, 
+    'bids': [
+        ['0.04895000', '3.81000000', []], 
+        ['0.04894900', '24.39600000', []], 
+        ['0.04894800', '3.97400000', []], 
+        ['0.04894300', '10.75200000', []], 
+        ['0.04892900', '0.84400000', []]
+    ], 
+    'asks': [
+        ['0.04910000', '3.73800000', []], 
+        ['0.04914400', '15.00000000', []], 
+        ['0.04914700', '28.22000000', []], 
+        ['0.04927600', '12.15100000', []], 
+        ['0.04935000', '70.00000000', []]
+    ]
 }
 ```
 </details>
@@ -69,17 +69,17 @@ binance.sell_limit("ETHBTC", 0.1, 1)
 
 ```js
 {
-	'orderId': 10388204, 
-	'clientOrderId': 'PUHmAEVLfYLfYR6637KNlG', 
-	'origQty': '0.10000000', 
-	'symbol': 'ETHBTC', 
-	'side': 'SELL', 
-	'timeInForce': 'GTC', 
-	'status': 'NEW', 
-	'transactTime': 1508557754003, 
-	'type': 'LIMIT', 
-	'price': '1.00000000', 
-	'executedQty': '0.00000000'
+    'orderId': 10388204, 
+    'clientOrderId': 'PUHmAEVLfYLfYR6637KNlG', 
+    'origQty': '0.10000000', 
+    'symbol': 'ETHBTC', 
+    'side': 'SELL', 
+    'timeInForce': 'GTC', 
+    'status': 'NEW', 
+    'transactTime': 1508557754003, 
+    'type': 'LIMIT', 
+    'price': '1.00000000', 
+    'executedQty': '0.00000000'
 }
 ```
 </details>
@@ -100,19 +100,19 @@ binance.query_order("ETHBTC", orderId)
 
 ```js
 {
-	'orderId': 10388204, 
-	'clientOrderId': '6SHkb2Oo1d6WHOEvWynhsl', 
-	'origQty': '0.10000000', 
-	'icebergQty': '0.00000000', 
-	'symbol': 'ETHBTC', 
-	'side': 'SELL', 
-	'timeInForce': 'GTC', 
-	'status': 'CANCELED', 
-	'stopPrice': '0.00000000', 
-	'time': 1508557754003, 
-	'type': 'LIMIT', 
-	'price': '1.00000000', 
-	'executedQty': '0.00000000'
+    'orderId': 10388204, 
+    'clientOrderId': '6SHkb2Oo1d6WHOEvWynhsl', 
+    'origQty': '0.10000000', 
+    'icebergQty': '0.00000000', 
+    'symbol': 'ETHBTC', 
+    'side': 'SELL', 
+    'timeInForce': 'GTC', 
+    'status': 'CANCELED', 
+    'stopPrice': '0.00000000', 
+    'time': 1508557754003, 
+    'type': 'LIMIT', 
+    'price': '1.00000000', 
+    'executedQty': '0.00000000'
 }
 ```
 </details>
@@ -131,15 +131,15 @@ binance.cancel("ETHBTC", orderId)
 
 ```js
 {
-	'orderId': 10388204, 
-	'clientOrderId': '6akmdNpyldQMMr5q9UrOnC', 
-	'symbol': 'ETHBTC', 
-	'origClientOrderId': '6SHkb2Oo1d6WHOEvWynhsl'
+    'orderId': 10388204, 
+    'clientOrderId': '6akmdNpyldQMMr5q9UrOnC', 
+    'symbol': 'ETHBTC', 
+    'origClientOrderId': '6SHkb2Oo1d6WHOEvWynhsl'
 }
 
 {
-	'msg': 'UNKNOWN_ORDER', 
-	'code': -2011
+    'msg': 'UNKNOWN_ORDER', 
+    'code': -2011
 }
 ```
 </details>
@@ -154,36 +154,36 @@ binance.get_open_orders("ETHBTC")
 
 ```js
 [
-	{
-		'orderId': 10388996, 
-		'clientOrderId': 'BqE6UXhquxwHKGEK2AMpJL', 
-		'origQty': '0.01000000', 
-		'icebergQty': '0.00000000', 
-		'symbol': 'ETHBTC', 
-		'side': 'SELL', 
-		'timeInForce': 'GTC', 
-		'status': 'NEW', 
-		'stopPrice': '0.00000000', 
-		'time': 1508558434918, 
-		'type': 'LIMIT', 
-		'price': '1.00000000', 
-		'executedQty': '0.00000000'
-	}, 
-	{
-		'orderId': 10389084, 
-		'clientOrderId': 'QoI5XaqhW533pFL5fHxz5V', 
-		'origQty': '0.02000000', 
-		'icebergQty': '0.00000000', 
-		'symbol': 'ETHBTC', 
-		'side': 'SELL', 
-		'timeInForce': 'GTC', 
-		'status': 'NEW', 
-		'stopPrice': '0.00000000', 
-		'time': 1508558467200, 
-		'type': 'LIMIT', 
-		'price': '1.00000000', 
-		'executedQty': '0.00000000'
-	}
+    {
+        'orderId': 10388996, 
+        'clientOrderId': 'BqE6UXhquxwHKGEK2AMpJL', 
+        'origQty': '0.01000000', 
+        'icebergQty': '0.00000000', 
+        'symbol': 'ETHBTC', 
+        'side': 'SELL', 
+        'timeInForce': 'GTC', 
+        'status': 'NEW', 
+        'stopPrice': '0.00000000', 
+        'time': 1508558434918, 
+        'type': 'LIMIT', 
+        'price': '1.00000000', 
+        'executedQty': '0.00000000'
+    }, 
+    {
+        'orderId': 10389084, 
+        'clientOrderId': 'QoI5XaqhW533pFL5fHxz5V', 
+        'origQty': '0.02000000', 
+        'icebergQty': '0.00000000', 
+        'symbol': 'ETHBTC', 
+        'side': 'SELL', 
+        'timeInForce': 'GTC', 
+        'status': 'NEW', 
+        'stopPrice': '0.00000000', 
+        'time': 1508558467200, 
+        'type': 'LIMIT', 
+        'price': '1.00000000', 
+        'executedQty': '0.00000000'
+    }
 ]
 ```
 </details>
@@ -197,350 +197,350 @@ binance.get_account()["balances"]
 
 ```js
 {
-	'buyerCommission':0,
-	'canWithdraw':True,
-	'takerCommission':10,
-	'canTrade':True,
-	'makerCommission':10,
-	'sellerCommission':0,
-	'canDeposit':True,
-	'balances':[
-		{
-			'locked':'0.00000000',
-			'asset':'BTC',
-			'free':'0.94532595'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'LTC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ETH',
-			'free':'0.74797941'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'BNC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ICO',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'NEO',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'BNB',
-			'free':'75.57729383'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'123',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'456',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'QTUM',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'EOS',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'SNT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'BNT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'GAS',
-			'free':'2.59734164'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'BCC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'BTM',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'USDT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'HCC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'HSR',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'OAX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'DNT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'MCO',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ICN',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ELC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'PAY',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ZRX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'OMG',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'WTC',
-			'free':'28.95569000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'LRX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'YOYO',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'LRC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'LLT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'TRX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'FID',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'SNGLS',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'STRAT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'BQX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'FUN',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'KNC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'CDT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'XVG',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'IOTA',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'SNM',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'LINK',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'CVC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'TNT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'REP',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'CTR',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'MDA',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'MTL',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'SALT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'NULS',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'SUB',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'STX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'MTH',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'CAT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ADX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'PIX',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ETC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ENG',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'ZEC',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'AST',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'1ST',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'GNT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'DGD',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'BAT',
-			'free':'0.00000000'
-		},
-		{
-			'locked':'0.00000000',
-			'asset':'DASH',
-			'free':'0.00000000'
-		}
-	]
+    'buyerCommission':0,
+    'canWithdraw':True,
+    'takerCommission':10,
+    'canTrade':True,
+    'makerCommission':10,
+    'sellerCommission':0,
+    'canDeposit':True,
+    'balances':[
+        {
+            'locked':'0.00000000',
+            'asset':'BTC',
+            'free':'0.94532595'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'LTC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ETH',
+            'free':'0.74797941'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'BNC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ICO',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'NEO',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'BNB',
+            'free':'75.57729383'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'123',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'456',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'QTUM',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'EOS',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'SNT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'BNT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'GAS',
+            'free':'2.59734164'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'BCC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'BTM',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'USDT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'HCC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'HSR',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'OAX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'DNT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'MCO',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ICN',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ELC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'PAY',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ZRX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'OMG',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'WTC',
+            'free':'28.95569000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'LRX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'YOYO',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'LRC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'LLT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'TRX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'FID',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'SNGLS',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'STRAT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'BQX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'FUN',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'KNC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'CDT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'XVG',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'IOTA',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'SNM',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'LINK',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'CVC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'TNT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'REP',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'CTR',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'MDA',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'MTL',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'SALT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'NULS',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'SUB',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'STX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'MTH',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'CAT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ADX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'PIX',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ETC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ENG',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'ZEC',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'AST',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'1ST',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'GNT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'DGD',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'BAT',
+            'free':'0.00000000'
+        },
+        {
+            'locked':'0.00000000',
+            'asset':'DASH',
+            'free':'0.00000000'
+        }
+    ]
 }
 ```
 </details>
