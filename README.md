@@ -1,6 +1,6 @@
 # Python Binance API
 
-This project to provide a Python wrapper of the [Binance API](https://www.binance.com/restapipub.html). As simplicity is the focus of this project, the wrapper is intuitive and easy to use. 
+This project provides a Python wrapper of the [Binance API](https://www.binance.com/restapipub.html). As simplicity is the focus of this project, the wrapper is intuitive and easy to use. 
 
 #### Requirement
 
