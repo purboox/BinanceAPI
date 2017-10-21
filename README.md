@@ -2,10 +2,10 @@
 
 This project provides a Python wrapper of the [Binance API](https://www.binance.com/restapipub.html). As simplicity is the focus of this project, the wrapper is intuitive and easy to use. 
 
-#### Requirement
+#### Requirements
 
 * python 2.7
-* requests >= 2.14.0
+* python-requests >= 2.14.0
 
 #### Getting started
 ```python
@@ -134,11 +134,10 @@ binance.cancel("ETHBTC", orderId)
 	'symbol': 'ETHBTC', 
 	'origClientOrderId': '6SHkb2Oo1d6WHOEvWynhsl'
 }
-
-{
-	'msg': 'UNKNOWN_ORDER', 
-	'code': -2011
-}
+// {
+//	'msg': 'UNKNOWN_ORDER', 
+//	'code': -2011
+// }
 ```
 </details>
 
