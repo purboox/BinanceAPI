@@ -94,6 +94,7 @@ binance.buy_market("ETHBTC", 0.1)
 orderId = 10388204
 binance.query_order("ETHBTC", orderId)
 ```
+
 <details>
  <summary>View Response</summary>
 
@@ -127,6 +128,7 @@ binance.cancel("ETHBTC", orderId)
 
 <details>
  <summary>View Response</summary>
+
 ```js
 {
 	'orderId': 10388204, 
@@ -134,9 +136,7 @@ binance.cancel("ETHBTC", orderId)
 	'symbol': 'ETHBTC', 
 	'origClientOrderId': '6SHkb2Oo1d6WHOEvWynhsl'
 }
-```
 
-```js
 {
 	'msg': 'UNKNOWN_ORDER', 
 	'code': -2011
@@ -151,6 +151,7 @@ binance.get_open_orders("ETHBTC")
 
 <details>
  <summary>View Response</summary>
+
 ```js
 [
 	{
@@ -193,6 +194,7 @@ binance.get_account()["balances"]
 ```
 <details>
  <summary>View Response</summary>
+
 ```js
 {
 	'buyerCommission':0,
